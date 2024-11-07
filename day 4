@@ -4,7 +4,7 @@ Request and Response in Website & Networking:
 In the context of website and networking interactions, the concepts of requests and responses are
 fundamental to understanding how information is exchanged between clients and servers. Here's
 a detailed explanation of requests and responses in this context:
-1. Request:
+1. Request: 
 o A request is a message sent from a client (such as a web browser) to a server,
 seeking specific information or action.
 o When a user interacts with a website by typing a URL, clicking a link, submitting
