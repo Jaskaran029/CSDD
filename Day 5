@@ -1,0 +1,150 @@
+##
+Day 5
+Networking fundamentals: -
+Introduction to Networking Fundamentals:
+Networking fundamentals encompass the basic concepts and principles that form the foundation
+of computer networking. Here is an overview of key aspects:
+1. Network Topology:
+o Refers to how nodes and links in a network are arranged.
+o Nodes are devices capable of sending, receiving, storing, or forwarding data.
+2. Communication Protocols:
+o Networks utilize protocols to send, receive, create, or forward data.
+o Each network node is assigned a unique IP (Internet Protocol) address.
+3. Computer Networking:
+o Involves connecting computers to facilitate communication and data exchange.
+o Enables seamless interaction between connected devices.
+4. Networking Devices:
+o Essential components include switches, routers, and wireless access points.
+o Facilitate communication among devices within a network.
+5. Importance of Networking Fundamentals:
+o Understanding these basics is crucial for effective network management.
+o Helps in establishing reliable and secure communication infrastructures.
+By grasping these fundamental concepts, individuals can gain a solid understanding of how
+networks operate and the principles governing data exchange between devices.
+Networking models: -
+Networking Models:
+Networking models are conceptual frameworks that define the functions and interactions of
+devices in a network. They provide a structured approach to understanding how data is
+transmitted, received, and processed across a network. Here are some common networking
+models:
+Introduction to OSI Model and Its Layers:
+The OSI (Open Systems Interconnection) model is a conceptual framework that defines how
+computer systems communicate over a network. It consists of seven layers, each responsible for
+specific functions in the communication process. Here is an overview of the OSI model and its
+layers:
+1. Physical Layer (Layer 1):
+o Deals with the physical connection between devices.
+o Transmits raw data bits over a physical medium.
+2. Data Link Layer (Layer 2):
+o Provides error detection and correction.
+o Organizes bits into frames for transmission.
+3. Network Layer (Layer 3):
+o Handles routing and forwarding of data packets.
+o Manages logical addressing and traffic control.
+4. Transport Layer (Layer 4):
+o Ensures reliable data transfer between end systems.
+o Manages flow control and error recovery.
+5. Session Layer (Layer 5):
+o Establishes, maintains, and terminates connections between applications.
+o Synchronizes data exchange and manages dialogues.
+6. Presentation Layer (Layer 6):
+o Translates data into a format that the application layer can understand.
+o Handles data encryption and decryption.
+7. Application Layer (Layer 7):
+o Provides network services directly to user applications.
+o Supports communication between software applications.
+Understanding the OSI model and its layers is essential for network professionals to troubleshoot
+issues, design networks, and ensure efficient communication across different devices and
+systems.
+TCP/IP Model:
+The TCP/IP (Transmission Control Protocol/Internet Protocol) model is a networking framework
+that serves as the foundation of the internet and modern networking. It consists of four layers
+that define how data is transmitted and received between devices. Here is an overview of the
+TCP/IP model and its layers:
+1. Application Layer:
+o Responsible for application-level protocols and data exchange.
+o Includes protocols like HTTP, FTP, SMTP, and DNS.
+2. Transport Layer:
+o Manages end-to-end communication and data flow control.
+o Utilizes protocols like TCP (Transmission Control Protocol) and UDP (User
+Datagram Protocol).
+3. Internet Layer:
+o Handles addressing, routing, and packet forwarding.
+o Uses IP (Internet Protocol) to facilitate communication between different
+networks.
+4. Network Interface Layer (also known as Link Layer or Network Access Layer):
+o Deals with hardware addressing and physical transmission of data.
+o Includes protocols like Ethernet, Wi-Fi (IEEE 802.11), and PPP (Point-to-Point
+Protocol).
+The TCP/IP model is widely adopted due to its scalability, flexibility, and compatibility with
+diverse networking technologies. It forms the basis for communication on the internet and plays
+a crucial role in connecting devices across different networks. Understanding the TCP/IP model
+is essential for network administrators, engineers, and anyone working with computer networks.
+IP(Internet protocol): -
+IP Overview:
+IP (Internet Protocol) is a fundamental communication protocol that enables data packets to be
+sent across a network. It provides the addressing and routing mechanisms necessary for data
+transmission over the internet and other networks.
+IP Classifications:
+IP addresses are classified into different categories based on the size of the network they
+represent. The classifications are as follows:
+1. Class A:
+o Range: 0.0.0.0 to 127.255.255.255
+o Netmask: 255.0.0.0
+o Example: 10.0.0.0, 126.0.0.0
+o Reserved: 127.x.x.x (loopback)
+2. Class B:
+o Range: 128.0.0.0 to 191.255.255.255
+o Netmask: 255.255.0.0
+o Example: 172.16.0.0, 191.168.0.0
+3. Class C:
+o Range: 192.0.0.0 to 223.255.255.255
+o Netmask: 255.255.255.0
+o Example: 192.168.0.0, 200.200.200.0
+4. Class D (Multicast):
+o Range: 224.0.0.0 to 239.255.255.255
+o Used for multicast group addressing
+5. Class E (Experimental):
+o Range: 240.0.0.0 to 255.255.255.255
+o Reserved for experimental purposes
+IP Versions:
+There are two main versions of IP in use today:
+1. IPv4 (Internet Protocol version 4):
+o Address Format: Consists of 32 bits in four octets (e.g., 192.168.1.1)
+o Features: Widely used, but limited address space (4.3 billion addresses)
+o Example: 192.168.1.1
+2. IPv6 (Internet Protocol version 6):
+o Address Format: Consists of 128 bits in eight groups of four hexadecimal digits
+(e.g., 2001:0db8:85a3:0000:0000:8a2e:0370:7334)
+o Features: Expanded address space (340 undecillion addresses)
+o Example: 2001:0db8:85a3:0000:0000:8a2e:0370:7334
+Understanding IP classifications and versions is crucial for network administrators and IT
+professionals to effectively manage and configure networks, assign addresses, and ensure
+seamless communication across the internet and other networks.
+Firewall Overview:
+A firewall is a crucial cybersecurity tool that plays a vital role in monitoring and filtering network
+traffic to enhance security. It acts as a barrier between a trusted internal network and untrusted
+external networks, controlling the flow of data to prevent unauthorized access and potential
+security threats.
+Types of Firewalls:
+There are different types of firewalls, each serving specific purposes and offering varying levels
+of protection. Here are some common types:
+1. Packet Filtering Firewall:
+o Examines packets of data and filters them based on predefined rules.
+2. Circuit-Level Gateway:
+o Works at the session layer of the OSI model, monitoring TCP handshakes to
+determine if a connection is legitimate.
+3. Application-Level Gateway (Proxy Firewall):
+o Acts as an intermediary for specific applications, inspecting incoming and
+outgoing traffic at the application layer.
+4. Stateful Inspection Firewall:
+o Combines packet filtering and inspection of the state of active connections to
+make more informed decisions on allowing or blocking traffic.
+5. Next-Generation Firewall (NGFW):
+o Incorporates advanced features like intrusion prevention, deep packet inspection,
+and application awareness for enhanced security.
+Advantages of Firewalls:
+• Enhanced Security: Protects networks from unauthorized access and cyber threats.
+• Traffic Control: Monages and filters network traffic efficiently.
+• Policy Enforcement: Enforces security policies to ensure compliance.
+• Monitoring and Logging: Tracks and logs network activity for analysis and auditing.
