@@ -1,0 +1,106 @@
+##
+Day 3
+Understanding the Permission Table in Linux:
+In Linux operating systems, the permission table plays a vital role in determining who can access
+files and directories, as well as what actions they can perform on them. The permission table
+consists of a set of rules that define the level of access granted to different categories of users –
+the owner of the file, the group associated with the file, and other users.
+Components of the Permission Table:
+1. File Permissions:
+o Read (r): Allows users to view the contents of a file or list the files within a
+directory.
+o Write (w): Enables users to modify the contents of a file, delete the file, or create
+new files within a directory.
+o Execute (x): Grants users the permission to execute a file if it is a program or
+access the contents of a directory.
+2. Permission Categories:
+o Owner (u): Represents the user who owns the file and has the authority to modify
+permissions.
+o Group (g): Denotes users who are part of the group associated with the file.
+o Others (o): Includes all users who are neither the owner of the file nor part of the
+file's group.
+Structure of the Permission Table:
+The permission table is typically represented by a 10-character string, such as -rwxrwxrwx,
+which signifies the permissions for the owner, group, and others, respectively. The first character
+in the string indicates the file type – - for a regular file and d for a directory.
+The subsequent characters are divided into three sets of permissions, each set consisting of three
+characters:
+• The first set represents the permissions for the owner.
+• The second set represents the permissions for the group.
+• The third set represents the permissions for others.
+Assigning and Modifying Permissions:
+1. Numeric Representation:
+o Each permission (read, write, execute) is assigned a numeric value – read (4),
+write (2), execute (1).
+o These values are then added to determine the permission code for each category
+of users. For example, 755 indicates read, write, and execute permissions for the
+owner and read and execute permissions for the group and others.
+2. Symbolic Representation:
+o Involves using symbols like + to add permissions, - to remove permissions, and =
+to set specific permissions for user categories.
+o Symbolic representation allows for more granular control over permissions by
+specifying the exact permissions to be granted or revoked.
+Importance of the Permission Table:
+Understanding the permission table is crucial for maintaining data security and access control in
+a Linux environment. By correctly configuring permissions, system administrators can ensure
+that sensitive files are protected from unauthorized access while granting appropriate access to
+users who require it.
+In conclusion, the permission table serves as a foundational element in Linux systems, enabling
+users to manage access rights effectively and secure their data from unauthorized modifications
+or disclosures. Mastering the concepts of file permissions and the permission table is essential
+for operating and securing a Linux system efficiently.
+Changing the file permissions: -
+To change file permissions in Linux, you can use the chmod command followed by the desired
+permission settings. Here is a step-by-step guide on how to change permissions:
+Steps to Change File Permissions in Linux:
+1. Identify the File or Directory: Determine the file or directory for which you want to
+modify permissions.
+2. Use the chmod Command: Open the terminal and type chmod followed by the
+permission settings and the file/directory name.
+o Syntax: chmod [permissions] [file/directory]
+3. Permission Settings:
+o Numeric Representation: Assign numeric values to permissions (read = 4, write
+= 2, execute = 1) and add them to set the permission code.
+▪ Example: chmod 755 file.txt grants read, write, and execute permissions
+to the owner, and read and execute permissions to the group and others.
+o Symbolic Representation: Use symbols like + to add permissions, - to remove
+permissions, and = to set specific permissions for user categories.
+▪ Example: chmod u+x file.txt adds execute permission for the owner.
+4. Verify Changes: After changing permissions, you can verify them by using the ls -l
+command to display the file permissions.
+By following these steps, you can effectively change file permissions in Linux to control access
+to files and directories based on your requirements.
+Linux File Hierarchy Structure:
+The Linux File Hierarchy Structure, also known as the Filesystem Hierarchy Standard (FHS),
+defines the directory structure and contents in a Linux operating system. Here is an overview of
+the Linux file hierarchy:
+1. Root Directory (/):
+o The top-level directory in the Linux file system.
+o Contains all other directories and files.
+2. /bin (Binary Binaries):
+o Stores essential binary executables for system boot and operation.
+o Common commands like ls, cp, mv are located here.
+3. /etc (Etcetera):
+o Contains system-wide configuration files.
+o Configuration files for various services and applications are stored here.
+4. /home (Home Directories):
+o Houses user home directories.
+o Each user has a subdirectory here for personal files and settings.
+5. /var (Variable):
+o Holds variable data files like logs, databases, and temporary files.
+o Data that changes frequently during system operation is stored here.
+6. /usr (User):
+o Contains user-related programs, libraries, documentation, and source code.
+o Often referred to as the user directory.
+7. /tmp (Temporary):
+o Stores temporary files that are deleted upon system reboot.
+o Used for temporary storage by applications.
+8. /dev (Device):
+o Contains device files representing hardware devices.
+o Allows interaction with hardware through file operations.
+9. /proc (Process):
+o Virtual file system that provides information about running processes.
+o Contains system and process information.
+Understanding the Linux file hierarchy is crucial for navigating and managing files and
+directories effectively in a Linux system. Each directory serves a specific purpose and contributes
+to the overall organization and functionality of the operating system
